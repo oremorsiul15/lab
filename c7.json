@@ -1,0 +1,94 @@
+[
+    {
+        "question": "A deadlocked state occurs whenever ____. A) a process is waiting for I/O to a device that does not exist B) the system has no available free resources C) every process in a set is waiting for an event that can only be caused by another process in the set D) a process is unable to release its request for a resource after use",
+        "ans": "C"
+    },
+    {
+        "question": "One necessary condition for deadlock is ____, which states that at least one resource must be held in a nonsharable mode. A) hold and wait B) mutual exclusion C) circular wait D) no preemption",
+        "ans": "B"
+    },
+    {
+        "question": "One necessary condition for deadlock is ______, which states that a process must be holding one resource and waiting to acquire additional resources. A) hold and wait B) mutual exclusion C) circular wait D) no preemption",
+        "ans": "A"
+    },
+    {
+        "question": "One necessary condition for deadlock is ______, which states that a resource can be released only voluntarily by the process holding the resource. A) hold and wait B) mutual exclusion C) circular wait D) no preemption",
+        "ans": "D"
+    },
+    {
+        "question": "One necessary condition for deadlock is ______, which states that there is a chain of waiting processes whereby P0 is waiting for a resource held by P1, P1 is waiting for a resource held by P2, and Pn is waiting for a resource held by P0. A) hold and wait\nB) mutual exclusion\nC) circular wait\nD) no preemption",
+        "ans": "C"
+    },
+    {
+        "question": "The witness software product is a ____. A) lock-order verifier that uses mutual-exclusion locks to protect critical sections B) modeler to develop resource allocation graphs C) driver that can be used to prevent mutual exclusion for nonsharable resources D) implementation of the banker's algorithm available for most operating systems",
+        "ans": "A"
+    },
+    {
+        "question": "In a system resource-allocation graph, ____. A) a directed edge from a process to a resource is called an assignment edge B) a directed edge from a resource to a process is called a request edge C) a directed edge from a process to a resource is called a request edge D) None of the above",
+        "ans": "C"
+    },
+    {
+        "question": "A cycle in a resource-allocation graph is ____. A) a necessary and sufficient condition for deadlock in the case that each resource has more than one instance B) a necessary and sufficient condition for a deadlock in the case that each resource has exactly one instance C) a sufficient condition for a deadlock in the case that each resource has more than once instance D) is neither necessary nor sufficient for indicating deadlock in the case that each resource has exactly one instance",
+        "ans": "B"
+    },
+    {
+        "question": "To handle deadlocks, operating systems most often _____. A) pretend that deadlocks never occur B) use protocols to prevent or avoid deadlocks C) detect and recover from deadlocks D) None of the above",
+        "ans": "A"
+    },
+    {
+        "question": "Which of the following statements is true? A) A safe state is a deadlocked state. B) A safe state may lead to a deadlocked state. C) An unsafe state is necessarily, and by definition, always a deadlocked state. D) An unsafe state may lead to a deadlocked state.",
+        "ans": "D"
+    },
+    {
+        "question": "Suppose that there are ten resources available to three processes. At time 0, the following data is collected. The table indicates the process, the maximum number of resources needed by the process, and the number of resources currently owned by each process. Which of the following correctly characterizes this state? Process Maximum Needs Currently Owned P0 10 4 P1 3 1 P2 6 4 A) It is safe. B) It is not safe. C) The state cannot be determined. D) It is an impossible state.",
+        "ans": "B"
+    },
+    {
+        "question": "Suppose that there are 12 resources available to three processes. At time 0, the following data is collected. The table indicates the process, the maximum number of resources needed by the process, and the number of resources currently owned by each process. Which of the following correctly characterizes this state? Process Maximum Needs Currently Owned P0 10 4 P1 3 2 P2 7 4 A) It is safe. B) It is not safe. C) The state cannot be determined. D) It is an impossible state",
+        "ans": "A"
+    },
+    {
+        "question": "Which of the following data structures in the banker's algorithm is a vector of length m, where m is the number of resource types? A) Need B) Allocation C) Max D) Available",
+        "ans": "D"
+    },
+    {
+        "question": "Assume there are three resources, R1, R2, and R3, that are each assigned unique integer values 15, 10, and 25, respectively. What is a resource ordering which prevents a circular wait? A) R1, R2, R3 B) R3, R2, R1 C) R3, R1, R2 D) R2, R1, R3",
+        "ans": "D"
+    },
+    {
+        "question": "A _____ could be preempted from a process. A) mutex lock B) CPU C) semaphore D) file lock",
+        "ans": "B"
+    },
+    {
+        "question": "The circular-wait condition for a deadlock implies the hold-and-wait condition",
+        "ans": "True"
+    },
+    {
+        "question": "If a resource-allocation graph has a cycle, the system must be in a deadlocked state.",
+        "ans": "False"
+    },
+    {
+        "question": "Protocols to prevent hold-and-wait conditions typically also prevent starvation.",
+        "ans": "False"
+    },
+    {
+        "question": "The wait-for graph scheme is not applicable to a resource allocation system with multiple instances of each resource type.",
+        "ans": "True"
+    },
+    {
+        "question": "Ordering resources and requiring the resources to be acquired in order prevents the circular wait from occurring and therefore prevents deadlock from occurring.",
+        "ans": "False"
+    },
+    {
+        "question": "The banker's algorithm is useful in a system with multiple instances of each resource type.",
+        "ans": "True"
+    },
+    {
+        "question": "A system in an unsafe state will ultimately deadlock",
+        "ans": "False"
+    },
+    {
+        "question": "Deadlock prevention and deadlock avoidance are essentially the same approaches for handling deadlock.",
+        "ans": "False"
+    }
+]

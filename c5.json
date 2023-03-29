@@ -1,0 +1,142 @@
+[
+    {
+        "question": "A race condition ____.\nA) results when several threads try to access the same data concurrently\nB) results when several threads try to access and modify the same data concurrently\nC) will result only if the outcome of execution does not depend on the order in which\ninstructions are executed\nD) None of the above",
+        "ans": "B"
+    },
+    {
+        "question": "An instruction that executes atomically ____.\nA) must consist of only one machine instruction\nB) executes as a single, uninterruptible unit\nC) cannot be used to solve the critical section problem\nD) All of the above",
+        "ans": "B"
+    },
+    {
+        "question": "A semaphore ____.\nA) is essentially an integer variable\nB) is accessed through only one standard operation\nC) can be modified simultaneously by multiple threads\nD) cannot be used to control access to a thread's critical sections",
+        "ans": "A"
+    },
+    {
+        "question": "A mutex lock ____.\nA) is exactly like a counting semaphore\nB) is essentially a boolean variable\nC) is not guaranteed to be atomic\nD) can be used to eliminate busy waiting",
+        "ans": "B"
+    },
+    {
+        "question": "In Peterson's solution, the ____ variable indicates if a process is ready to enter its critical\nsection.\nA) turn B) lock C) flag[i] D) turn[i]",
+        "ans": "C"
+    },
+    {
+        "question": "The first readers-writers problem ____.\nA) requires that, once a writer is ready, that writer performs its write as soon as\npossible.\nB) is not used to test synchronization primitives.\nC) requires that no reader will be kept waiting unless a writer has already obtained\npermission to use the shared database.\nD) requires that no reader will be kept waiting unless a reader has already obtained\npermission to use the shared database.",
+        "ans": "C"
+    },
+    {
+        "question": "A(n) ___ type presents a set of programmer-defined operations that are provided mutual\nexclusion within it.\nA) transaction B) signal C) binary D) monitor",
+        "ans": "D"
+    },
+    {
+        "question": "____________ occurs when a higher-priority process needs to access a data structure that is currently being accessed by a lower-priority process.\nA) Priority inversion\nB) Deadlock\nC) A race condition\nD) A critical section",
+        "ans": "A"
+    },
+    {
+        "question": "What is the correct order of operations for protecting a critical section using mutex locks?\nA) release() followed by acquire()\nB) acquire() followed by release()\nC) wait() followed by signal()\nD) signal() followed by wait()",
+        "ans": "B"
+    },
+    {
+        "question": "What is the correct order of operations for protecting a critical section using a binary semaphore?\nA) release() followed by acquire()\nB) acquire() followed by release()\nC) wait() followed by signal()\nD) signal() followed by wait()",
+        "ans": "C"
+    },
+    {
+        "question": "_____ is not a technique for handling critical sections in operating systems.\nA) Nonpreemptive kernels\nB) Preemptive kernels\nC) Spinlocks\nD) Peterson's solution",
+        "ans": "D"
+    },
+    {
+        "question": "A solution to the critical section problem does not have to satisfy which of the following requirements? A) mutual exclusion\nB) progress\nC) atomicity\nD) bounded waiting",
+        "ans": "C"
+    },
+    {
+        "question": "A(n) _______ refers to where a process is accessing/updating shared data.\nA) critical section\nB) entry section\nC) mutex\nD) test-and-set",
+        "ans": "A"
+    },
+    {
+        "question": "_____ can be used to prevent busy waiting when implementing a semaphore.\nA) Spinlocks\nB) Waiting queues\nC) Mutex lock\nD) Allowing the wait() operation to succeed",
+        "ans": "B"
+    },
+    {
+        "question": "Assume an adaptive mutex is used for accessing shared data on a Solaris system with multiprocessing capabilities. Which of the following statements is not true?\nA) A waiting thread may spin while waiting for the lock to become available.\nB) A waiting thread may sleep while waiting for the lock to become available.\nC) The adaptive mutex is only used to protect short segments of code.\nD) Condition variables and semaphores are never used in place of an adaptive mutex.",
+        "ans": "D"
+    },
+    {
+        "question": "What is the purpose of the mutex semaphore in the implementation of the bounded-buffer problem using semaphores?\nA) It indicates the number of empty slots in the buffer.\nB) It indicates the number of occupied slots in the buffer.\nC) It controls access to the shared buffer.\nD) It ensures mutual exclusion.",
+        "ans": "D"
+    },
+    {
+        "question": "How many philosophers may eat simultaneously in the Dining Philosophers problem with 5 philosophers?\nA) 1\nB) 2\nC) 3\nD) 5",
+        "ans": "B"
+    },
+    {
+        "question": "Which of the following statements is true?\nA) A counting semaphore can never be used as a binary semaphore.\nB) A binary semaphore can never be used as a counting semaphore.\nC) Spinlocks can be used to prevent busy waiting in the implementation of semaphore.\nD) Counting semaphores can be used to control access to a resource with a finite number of instances.",
+        "ans": "C"
+    },
+    {
+        "question": "_____ is/are not a technique for managing critical sections in operating systems.\nA) Peterson's solution\nB) Preemptive kernel\nC) Nonpreemptive kernel\nD) Semaphores",
+        "ans": "A"
+    },
+    {
+        "question": "When using semaphores, a process invokes the wait() operation before accessing its critical section, followed by the signal() operation upon completion of its critical section. Consider reversing the order of these two operations—first calling signal(), then calling wait(). What\nwould be a possible outcome of this?\nA) Starvation is possible.\nB) Several processes could be active in their critical sections at the same time.\nC) Mutual exclusion is still assured.\nD) Deadlock is possible.",
+        "ans": "B"
+    },
+    {
+        "question": "Which of the following statements is true?\nA) Operations on atomic integers do not require locking.\nB) Operations on atomic integers do require additional locking.\nC) Linux only provides the atomic_inc() and atomic_sub() operations.\nD) Operations on atomic integers can be interrupted.",
+        "ans": "A"
+    },
+    {
+        "question": "A(n) ___________ is a sequence of read-write operations that are atomic.\nA) atomic integer\nB) semaphore\nC) memory transaction\nD) mutex lock",
+        "ans": "C"
+    },
+    {
+        "question": "The OpenMP #pragma omp critical directive ___________.\nA) behaves much like a mutex lock\nB) does not require programmers to identify critical sections\nC) does not guarantee prevention of race conditions\nD) is similar to functional languages",
+        "ans": "A"
+    },
+    {
+        "question": "Another problem related to deadlocks is ____________.\nA) race conditions\nB) critical sections\nC) spinlocks\nD) indefinite blocking",
+        "ans": "D"
+    },
+    {
+        "question": "Race conditions are prevented by requiring that critical regions be protected by locks.",
+        "ans": "True"
+    },
+    {
+        "question": "The value of a counting semaphore can range only between 0 and 1.",
+        "ans": "False"
+    },
+    {
+        "question": "A deadlock-free solution eliminates the possibility of starvation.",
+        "ans": "False"
+    },
+    {
+        "question": "The local variables of a monitor can be accessed by only the local procedures.",
+        "ans": "True"
+    },
+    {
+        "question": "Every object in Java has associated with it a single lock.",
+        "ans": "True"
+    },
+    {
+        "question": "Monitors are a theoretical concept and are not practiced in modern programming languages",
+        "ans": "False"
+    },
+    {
+        "question": "A thread will immediately acquire a dispatcher lock that is the signaled state.",
+        "ans": "True"
+    },
+    {
+        "question": "Mutex locks and counting semaphores are essentially the same thing.",
+        "ans": "False"
+    },
+    {
+        "question": "Mutex locks and binary semaphores are essentially the same thing.",
+        "ans": "True"
+    },
+    {
+        "question": "A nonpreemptive kernel is safe from race conditions on kernel data structures.",
+        "ans": "True"
+    },
+    {
+        "question": "Linux mostly uses atomic integers to manage race conditions within the kernel.",
+        "ans": "False"
+    }
+]

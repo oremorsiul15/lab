@@ -1,0 +1,178 @@
+[
+    {
+        "question": "Which of the following is true of cooperative scheduling? A) It requires a timer. B) A process keeps the CPU until it releases the CPU either by terminating or by switching to the waiting state. C) It incurs a cost associated with access to shared data. D) A process switches from the running state to the ready state when an interrupt occurs.",
+        "ans": "B"
+    },
+    {
+        "question": "____ is the number of processes that are completed per time unit. A) CPU utilization B) Response time C) Turnaround time D) Throughput",
+        "ans": "D"
+    },
+    {
+        "question": "____ scheduling is approximated by predicting the next CPU burst with an exponential average of the measured lengths of previous CPU bursts. A) Multilevel queue B) RR C) FCFS D) SJF",
+        "ans": "D"
+    },
+    {
+        "question": "The ____ scheduling algorithm is designed especially for time-sharing systems. A) SJF B) FCFS C) RR D) Multilevel queue",
+        "ans": "C"
+    },
+    {
+        "question": "Which of the following scheduling algorithms must be nonpreemptive? A) SJF B) RR C) FCFS D) priority algorithms",
+        "ans": "C"
+    },
+    {
+        "question": "Which of the following is true of multilevel queue scheduling? A) Processes can move between queues. B) Each queue has its own scheduling algorithm. C) A queue cannot have absolute priority over lower-priority queues. D) It is the most general CPU-scheduling algorithm",
+        "ans": "B"
+    },
+    {
+        "question": "The default scheduling class for a process in Solaris is ____. A) time sharing B) system C) interactive D) real-time",
+        "ans": "A"
+    },
+    {
+        "question": "Which of the following statements are false with regards to the Linux CFS scheduler? A) Each task is assigned a proportion of CPU processing time. B) Lower numeric values indicate higher relative priorities. C) There is a single, system-wide value of vruntime. D) The scheduler doesn't directly assign priorities",
+        "ans": "C"
+    },
+    {
+        "question": "The Linux CFS scheduler identifies _____________ as the interval of time during which every runnable task should run at least once. A) virtual run time B) targeted latency C) nice value D) load balancing",
+        "ans": "B"
+    },
+    {
+        "question": "In Little's formula, λ, represents the ____. A) average waiting time in the queue B) average arrival rate for new processes in the queue C) average queue length D) average CPU utilization",
+        "ans": "B"
+    },
+    {
+        "question": "In Solaris, what is the time quantum (in milliseconds) of an interactive thread with priority 35? A) 25 B) 54 C) 80 D) 35",
+        "ans": "C"
+    },
+    {
+        "question": "In Solaris, if an interactive thread with priority 15 uses its entire time quantum, what is its priority recalculated to? A) 51 B) 5 C) 160 D) It remains at 15",
+        "ans": "B"
+    },
+    {
+        "question": "In Solaris, if an interactive thread with priority 25 is waiting for I/O, what is its priority recalculated to when it is eligible to run again? A) 15 B) 120 C) 52 D) It remains at 25",
+        "ans": "C"
+    },
+    {
+        "question": "______ allows a thread to run on only one processor. A) Processor affinity B) Processor set C) NUMA D) Load balancing",
+        "ans": "A"
+    },
+    {
+        "question": "What is the numeric priority of a Windows thread in the NORMAL_PRIORITY_CLASS with HIGHEST relative priority? A) 24 B) 10 C) 8 D) 13",
+        "ans": "B"
+    },
+    {
+        "question": "What is the numeric priority of a Windows thread in the HIGH_PRIORITY_CLASS with ABOVE_NORMAL relative priority? A) 24 B) 10 C) 8 D) 14",
+        "ans": "D"
+    },
+    {
+        "question": "What is the numeric priority of a Windows thread in the BELOW_NORMAL_PRIORITY_CLASS with NORMAL relative priority? A) 6 B) 7 C) 5 D) 8",
+        "ans": "A"
+    },
+    {
+        "question": "__________ involves the decision of which kernel thread to schedule onto which CPU. A) Process-contention scope B) System-contention scope C) Dispatcher D) Round-robin scheduling",
+        "ans": "B"
+    },
+    {
+        "question": "With _______ a thread executes on a processor until a long-latency event (i.e. a memory stall) occurs. A) coarse-grained multithreading B) fine-grained multithreading C) virtualization D) multicore processors",
+        "ans": "A"
+    },
+    {
+        "question": "A significant problem with priority scheduling algorithms is _____. A) complexity B) starvation C) determining the length of the next CPU burst D) determining the length of the time quantum",
+        "ans": "B"
+    },
+    {
+        "question": "The ______ occurs in first-come-first-served scheduling when a process with a long CPU burst occupies the CPU. A) dispatch latency B) waiting time C) convoy effect D) system-contention scope",
+        "ans": "C"
+    },
+    {
+        "question": "The rate of a periodic task in a hard real-time system is ____, where p is a period and t is the processing time. A) 1/p B) p/t C) 1/t D) pt",
+        "ans": "A"
+    },
+    {
+        "question": "Which of the following is true of the rate-monotonic scheduling algorithm? A) The task with the shortest period will have the lowest priority. B) It uses a dynamic priority policy. C) CPU utilization is bounded when using this algorithm. D) It is non-preemptive.",
+        "ans": "C"
+    },
+    {
+        "question": "Which of the following is true of earliest-deadline-first (EDF) scheduling algorithm? A) When a process becomes runnable, it must announce its deadline requirements to the system. B) Deadlines are assigned as following: the earlier the deadline, the lower the priority; the later the deadline, the higher the priority. C) Priorities are fixed; that is, they cannot be adjusted when a new process starts running. D) It assigns priorities statically according to deadline.",
+        "ans": "A"
+    },
+    {
+        "question": "The two general approaches to load balancing are __________ and ____________. A) soft affinity, hard affinity B) coarse grained, fine grained\nC) soft real-time, hard real-time D) push migration, pull migration",
+        "ans": "D"
+    },
+    {
+        "question": "In preemptive scheduling, the sections of code affected by interrupts must be guarded from simultaneous use.",
+        "ans": "True"
+    },
+    {
+        "question": "In RR scheduling, the time quantum should be small with respect to the context-switch time.",
+        "ans": "False"
+    },
+    {
+        "question": "The most complex scheduling algorithm is the multilevel feedback-queue algorithm.",
+        "ans": "True"
+    },
+    {
+        "question": "Load balancing is typically only necessary on systems with a common run queue.",
+        "ans": "False"
+    },
+    {
+        "question": "Systems using a one-to-one model (such as Windows, Solaris , and Linux) schedule threads using process-contention scope (PCS).",
+        "ans": "False"
+    },
+    {
+        "question": "Solaris and Windows assign higher-priority threads/tasks longer time quantums and lower-priority tasks shorter time quantums.",
+        "ans": "False"
+    },
+    {
+        "question": "A Solaris interactive thread with priority 15 has a higher relative priority than an interactive thread with priority 20",
+        "ans": "False"
+    },
+    {
+        "question": "A Solaris interactive thread with a time quantum of 80 has a higher priority than an interactive thread with a time quantum of 120.",
+        "ans": "True"
+    },
+    {
+        "question": "SMP systems that use multicore processors typically run faster than SMP systems that place each processor on separate cores.",
+        "ans": "True"
+    },
+    {
+        "question": "Windows 7 User-mode scheduling (UMS) allows applications to create and manage thread independently of the kernel",
+        "ans": "True"
+    },
+    {
+        "question": "Round-robin (RR) scheduling degenerates to first-come-first-served (FCFS) scheduling if the time quantum is too long",
+        "ans": "True"
+    },
+    {
+        "question": "Load balancing algorithms have no impact on the benefits of processor affinity.",
+        "ans": "False"
+    },
+    {
+        "question": "A multicore system allows two (or more) threads that are in compute cycles to execute at the same time",
+        "ans": "True"
+    },
+    {
+        "question": "Providing a preemptive, priority-based scheduler guarantees hard real-time functionality",
+        "ans": "False"
+    },
+    {
+        "question": "In hard real-time systems, interrupt latency must be bounded.",
+        "ans": "True"
+    },
+    {
+        "question": "In Pthread real-time scheduling, the SCHED_FIFO class provides time slicing among threads of equal priority.",
+        "ans": "False"
+    },
+    {
+        "question": "In the Linux CFS scheduler, the task with smallest value of vruntime is considered to have the highest priority",
+        "ans": "True"
+    },
+    {
+        "question": "The length of a time quantum assigned by the Linux CFS scheduler is dependent upon the relative priority of a task",
+        "ans": "False"
+    },
+    {
+        "question": "The Completely Fair Scheduler (CFS) is the default scheduler for Linux systems",
+        "ans": "True"
+    }
+]
